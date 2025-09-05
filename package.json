@@ -1,0 +1,24 @@
+{
+  "name": "k-lendario",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-de-azevedo/k-lendario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gabriel-de-azevedo/k-lendario/issues"
+  },
+  "homepage": "https://github.com/gabriel-de-azevedo/k-lendario#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
