@@ -3,12 +3,20 @@
   <head>
     <title>K-lendario</title>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.js"
+      integrity="sha384-ksKjJrwjL5VxqAkAZAVOPXvMkwAykMaNYegdixAESVr+KqLkKE8XBDoZuwyWVUDv"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div x-data="{ count: 0 }">
-      <button x-on:click="count++">Increment</button>
+    <div x-data="{ open: false }">
+      <button @click="open = !open">Toggle</button>
 
-      <span x-text="count"></span>
+      <span x-show="open"> Content... </span>
+    </div>
+    <div>
+      <button hx-post="/clicked" hx-swap="outerHTML">Click Me</button>
     </div>
   </body>
 </html>
