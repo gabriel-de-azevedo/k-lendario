@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>K-lendario</title>
-</head>
-<body>
-  <h1>Hello, World!</h1>
-</body>
+  <head>
+    <title>K-lendario</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+  <body>
+    <div x-data="{ count: 0 }">
+      <button x-on:click="count++">Increment</button>
+
+      <span x-text="count"></span>
+    </div>
+  </body>
 </html>
